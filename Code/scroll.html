@@ -1,0 +1,29 @@
+<?php
+include_once 'dbconnect.php';
+$query= "SELECT * FROM Notice";
+$result = mysql_query($query);
+
+
+
+
+
+
+?>
+<html>
+<head>
+<body>
+<div>
+<marquee bgcolor="#000080" onMouseOver="this.scrollAmount=2" onMouseOut="this.scrollAmount=4" scrollamount="4" direction="up" loop="true" width="30%">
+<center>
+<font color="#ffffff" size="+1">SCROLLING TEXT</font><p>
+<font color="#ff0000" size="+1">UPWARD</font><p> 
+<font color="#ffffff" size="+1">IS ONE WAY</font><p>
+<font color="#ffffff" size="+1">TO MAKE YOUR</font><p>
+<font color="#ffffff" size="+1">SITE</font><p>
+<font color="#ff0000" size="+1">STAND OUT</font><p>
+<font color="#ffffff" size="+1">FROM THE REST!</font>
+</center>
+</marquee>
+</div>
+</body>
+</html>
