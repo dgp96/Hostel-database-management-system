@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Company Home-VJTI's Training and Placement Cell</title>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="bootstrap-3.3.6/dist/css/bootstrap.min.css">
+  <script src="bootstrap-3.3.6/docs/assets/js/vendor/jquery.min.js"></script>
+  <script src="bootstrap-3.3.6/dist/js/bootstrap.min.js"></script> <style>
+	.btn-sm{font-size:18px;background-color:#404040;color:#ccc;}
+	.btn-sm:hover,.btn-sm:active{background-color:#ccc;color:#404040;}
+  </style>
+</head>
+<body>
+		
+<div class="container">
+<div class="row">
+	<div class="col-md-6">
+		<h1>&nbsp &nbsp Company name</h1>
+	</div>
+	<div class="col-md-offset-4 col-md-1"><br>
+		<a href="logout.html" class="btn btn-sm"><span class="glyphicon glyphicon-log-out"></span>&nbsp Logout</a>
+	</div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+  <div class="col-md-3">
+  <ul class="nav nav-pills nav-stacked">
+    <li class="active"><a data-toggle="pill" href="#home" class="mylink">Home</a></li>
+    <li><a data-toggle="pill" href="#addprog" class="mylink">Add New Programme</a></li>
+    <li><a data-toggle="pill" href="#modprog" class="mylink">Update / Modify <br>existing Programmes</a></li>
+    <li><a data-toggle="pill" href="#studentinfo" class="mylink">Student Information</a></li>
+	<li><a data-toggle="pill" href="#changepswd" class="mylink">Change Password</a></li>
+  </ul>
+  </div>
+  <div class="tab-content col-md-9">
+<!--Home-->
+    <div id="home" class="tab-pane fade in active">
+      <div class="jumbotron">
+		<h1>Welcome to</h1>
+		<h1>Company's Console</h1>
+	  </div>
+    </div>
+<!--Add New Programme-->	
+    <div id="addprog" class="tab-pane fade">
+      <h2>Add New Programme</h2><hr>
+<!--New Programme form-->	      
+	  <form class="form-horizontal" role="form">
+		<div class="form-group">
+		  <label class="control-label col-sm-3" for="progtitle">Programme Title : </label>
+		  <div class="col-sm-6">
+			<input type="text" class="form-control" id="progtitle" placeholder="Enter Programme Title">
+		  </div>
+		</div>
+		
+		<div class="form-group">
+		  <label class="control-label col-sm-3" for="progdescript">Programme Description :</label>
+			  <div class="col-sm-9">    
+				<textarea class="form-control" rows="4" id="progdescript" placeholder="Enter Programme Description"></textarea>
+			  </div>
+		</div>
+		
+		<div class="form-group">    
+			<div class="col-sm-offset-2"> 
+				<button type="submit" class="btn btn-default">Add Programme</button>
+				<button type="reset" class="btn btn-default">Clear Fields</button>
+			</div>
+		</div>
+	  </form>
+    </div>
+	
+    <div id="modprog" class="tab-pane fade">
+		<h1>Update / Modify existing Programmes</h1><br>
+<div class="col-sm-12">         
+  <table class="table table-hover">
+	<thead>
+	  <tr>
+		<th>Programme Title</th>
+		<th>Programme Description</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td>title</td> <!--enter code here!-->
+		<td>description</td>
+	  </tr>
+	  <tr>
+		<td>title2</td> <!--enter code here!-->
+		<td>description</td>
+	  </tr>
+	  <tr>
+		<td>title3</td> <!--enter code here!-->
+		<td>description</td>
+	  </tr>	  
+	</tbody>
+  </table>
+</div>
+</div>
+<div id="studentinfo" class="tab-pane fade">
+<h1>Search Student Information</h1><hr>
+<form class="form-horizontal" role="form">
+	<div class="form-group">
+		<label class="control-label col-sm-2" for="cgpa">CGPA above :</label>  
+		<div class="col-sm-4">
+			<select class="form-control" id="cgpa">
+			<option value="9">9</option>
+			<option value="8">8</option>
+			<option value="7">7</option>
+			<option value="6">6</option>
+			<option value="5">5</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2" for="branch">Select Branch : </label>
+		<div class="col-sm-4">
+			<select class="form-control" id="branch">
+			<option value="it">Information Tech.</option>
+			<option value="comps">Computers</option>
+			<option value="tc">EXTC</option>
+			<option value="trical">Electrical</option>
+			<option value="tronics">Electronics</option>
+			<option value="mech">Mechanical</option>
+			<option value="civil">Civil</option>
+			<option value="prod">Production</option>
+			<option value="tex">Textile</option>
+			</select>
+	</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-sm-2" for="year">Select Year : </label>
+		<div class="col-sm-4">
+			<select class="form-control" id="year">
+			<option value="3">Third Year</option>
+			<option value="4">Final Year</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">  
+		<div class="col-sm-offset-3">
+			<button type="submit" class="btn btn-default">Search</button>
+			<button type="reset" class="btn btn-default">Reset</button>
+		</div>
+	</div>
+</form>
+<!--Student ko choose bhi karna hai ! code here !-->
+</div>
+
+<div id="changepswd" class="tab-pane fade">
+  <h1>Change Password</h1>
+	
+	<form class="form-horizontal" role="form">
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="oldpwd">Old Password : </label>
+      <div class="col-sm-4">          
+        <input type="password" class="form-control" id="oldpwd" placeholder="Enter old password">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="newpwd">New Password : </label>
+      <div class="col-sm-4">          
+        <input type="password" class="form-control" id="newpwd" placeholder="Enter new password">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="cnewpwd">Confirm New Password : </label>
+      <div class="col-sm-4">          
+        <input type="password" class="form-control" id="cnewpwd" placeholder="Re-enter new password">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-4 col-sm-8">
+        <button type="submit" class="btn btn-default">Change Password</button>
+      </div>
+    </div>
+  </form>
+	
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
